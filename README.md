@@ -1,13 +1,21 @@
-# GitHub Codespaces ♥️ Flask
+# Flask Basic API teaching app
 
-Welcome to your shiny new Codespace running Flask! We've got everything fired up and running for you to explore Flask.
+This is a bare-bones Flask app that serves 3rd party API data to teach how to use `requests` library to make HTTP requests from APIs. It is not an app with a UI or front-end, but an API playground to test and experiment with APIs. 
+It relies on returning API data from other sources covering: 
+1. What are HTTP get requests.
+2. What JSON data looks like and how to handle it.
+3. How to build structured URLs in Python to make requests.
+4. How APIs work.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+   
+There are 3 main branches:
+1. **basic app** a Basic hard-coded route that fetches song lyrics.
+2. **added api routes** branch that shows 3 more example routes that fetch data from other sources, including using query parameters.
+3. **basic front-end** branch that has basic HTML links to the app routes. Copy and modify this in your project if you want to simplify navigation. 
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+### To run this application:
 
-To run this application:
-
+Open in a Codespaces environment and run this command:
 ```
 flask --debug run
 ```
